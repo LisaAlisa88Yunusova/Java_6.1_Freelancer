@@ -6,16 +6,16 @@ public class FreelancerService {
         int counter = 0;
 
         for (int i = 0; i < 12; i++) {
-           if (money >= threshold) {
-               // отдыхаем
-           money -= expenses;
-           money /= 3; // money = money / 3;
-           counter++;
-           } else {
-               // работаем
-               money += income; //-= *= /= %=
-               money -= expenses;
-           }
+            if (money >= threshold) {
+                // отдыхаем
+                money -= expenses;
+                money /= 3; // money = money / 3;
+                counter++;
+            } else {
+                // работаем
+                money += income; //-= *= /= %=
+                money -= expenses;
+            }
         }
 
         return counter;
